@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.PresentationView2"
+             BackgroundImage="presentation2.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="FillAndExpand" Padding="20,50,20,10" Spacing="0">
+                <Label Text="En répondant à toutes vos questions"
+                       TextColor="#fff"
+                       FontSize="27"
+                       Margin="0,0,0,40"
+                />
+
+                <Label Text="Wagui, c'est de nombreux agronomes spécialisés, prêts à répondre à toutes vos questions. Par exemple :"
+                       TextColor="#fff"
+                       FontSize="20"
+                       Margin="0,0,0,20"
+                />
+
+                <Label Text="Pourquoi mes tomates ont cette couleur ?"
+                       TextColor="#fff"
+                       FontSize="20"
+                       Margin="0,0,0,20"
+                />
+
+                <Label Text="Mes récoltes ne donnent plus autant qu'avant, est-ce normal ?"
+                       TextColor="#fff"
+                       FontSize="20"
+                       Margin="0,0,0,20"
+                />
+                <Button 
+                    BackgroundColor="#fff"
+                    TextColor="#00cc99"
+                    Text="Suivant"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    BorderRadius="30"
+                    Clicked="Presentation3"
+                    Margin="60,70,60,30"
+                    Image="droite.png"
+                    ContentLayout="Right, 40"
+                />
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

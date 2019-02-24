@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.Inscription2View2"
+             BackgroundImage="presentation6.png"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout Margin="40,25,20,40">
+            <RelativeLayout Padding="5,0,0,0" Margin="20,30,0,0">
+                <Image Source="droit.png" WidthRequest="40" 
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                        NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label 
+                    FontSize="30" 
+                    Text="Je complète mon compte" 
+                    TextColor="White" FontAttributes="Bold"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.2, Constant=0}"/>
+            </RelativeLayout>
+            
+            <RelativeLayout>
+                <Label FontSize="25" Text="Wagui met en relation différents acteurs du domaine agricole. De quel groupe faites-vous parti ?" TextColor="White" />
+
+            </RelativeLayout>
+
+            <RelativeLayout>
+                <Label Text="Agriculteur" TextColor="White" FontSize="30" FontAttributes="Bold"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"/>
+                <Switch x:Name="agriculteurSwitch"  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"/>
+            </RelativeLayout>
+            <RelativeLayout>
+                <Label Text="Investisseur" TextColor="White" FontSize="30" FontAttributes="Bold"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"/>
+                <Switch x:Name="investisseurSwitch"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"/>
+            </RelativeLayout>
+            <RelativeLayout>
+                <Label Text="Agronome" TextColor="White" FontSize="30" FontAttributes="Bold"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"/>
+                <Switch x:Name="agronomeSwitch"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"/>
+            </RelativeLayout>
+            <RelativeLayout>
+                <Label Text="Demandeur" TextColor="White" FontSize="30" FontAttributes="Bold"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"/>
+                <Switch x:Name="demandeurSwitch"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0,Constant=0}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"/>
+            </RelativeLayout>
+                
+                
+            
+
+
+            <Button 
+                    BackgroundColor="#fff"
+                    TextColor="#00cc99"
+                    Text="Suivant"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    BorderRadius="30"
+                    Margin="60,70,60,30"
+                    Image="droite.png"
+                    ContentLayout="Right, 40"
+                
+                />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

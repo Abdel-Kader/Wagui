@@ -1,0 +1,12 @@
+﻿/ref:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\Abdel-Kader\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc"
+/ref:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\Users\Abdel-Kader\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\tools\x86\ilc\lib\Private\\"
+/ref:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\in"
+/ref:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\Abdel-Kader\.nuget\packages\microsoft.net.native.compiler\2.1.8\tools\csc"
+/out:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\intermediate\WaguiApp.UWP.Sg"
+"@D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\obj\x86\Release\ilc\intermediate\WaguiApp.UWP.Sg\ComputedSerializationInput.txt"

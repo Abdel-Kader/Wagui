@@ -1,0 +1,1 @@
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp.UWP\WaguiApp.UWP.csproj;x86

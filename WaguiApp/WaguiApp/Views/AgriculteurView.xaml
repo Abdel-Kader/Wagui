@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.AgriculteurView"
+             BackgroundImage="agriculture.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Padding="5,0,0,0" Margin="20,70,0,0" Orientation="Horizontal">
+                <Image Source="droit.png" WidthRequest="40" Margin="20,0,0,0"
+                    >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                        Tapped="Back_Clicked"
+                        NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label 
+                    FontSize="25" 
+                    Text="Je complète mon compte" 
+                    TextColor="White" FontAttributes="Bold"
+                    Margin="30,20,0,40"
+                />
+            </StackLayout>
+            <StackLayout Margin="70,30,30,30">
+                <Label Text="Veuillez préciser les fruits ou légumes que vous cultivez au quotidien :" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Banane" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="70,30,100,30"/>
+                <Switch x:Name="bananeSwitch"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tubercule" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="70,30,80,30"/>
+                <Switch x:Name="tuberculeSwitch"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Laitue" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="70,30,120,30"/>
+                <Switch x:Name="laitueSwitch"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tomates" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="70,30,95,30"/>
+                <Switch x:Name="tomateSwitch"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Oseille" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="70,30,115,30"/>
+                <Switch x:Name="oseilleSwitch"/>
+            </StackLayout>
+
+            <Button 
+                    BackgroundColor="#00a99e"
+                    TextColor="#fff"
+                    Text="Suivant"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    BorderRadius="30"
+                    Margin="60,70,60,30"
+                    Image="droite.png"
+                    ContentLayout="Right, 40"
+                
+                />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

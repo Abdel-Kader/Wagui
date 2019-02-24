@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.PresentationView1"
+             BackgroundImage="presentation1.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" Padding="0,90,0,10" Spacing="0">
+            <Label 
+                    Text="Wagui à votre service"
+                    FontSize="27"
+                    TextColor="#fff"  
+                   XAlign="Center"
+                    Margin="0,0,0,40"
+                />
+
+            <Label Text="Chaque jour grâce à Wagui, des agriculteurs, des agronomes, des demandeurs d'emplois et même des investisseurs trouvent les moyens pour satisfaire leurs plus belles ambitions."
+                       TextColor="#fff"
+                       FontSize="20"
+                       XAlign="Center"
+                       Margin="0,0,0,40"
+                />
+
+            <Label Text="Découvrez comment en seulement 3 étapes..."
+                       TextColor="#fff"
+                       FontSize="20"
+               XAlign="Center"
+                />
+
+            <Button 
+                BackgroundColor="#fff"
+                TextColor="#00cc99"
+                Text="Commencer"
+                FontAttributes="Bold"
+                FontSize="20"
+                BorderRadius="30"
+                Clicked="Presentation2"
+                Margin="60,70,60,30"
+                
+                    
+                />
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

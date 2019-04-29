@@ -21,3 +21,6 @@ D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netsta
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netstandard2.0\XamlC.stamp
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netstandard2.0\WaguiApp.dll
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netstandard2.0\WaguiApp.pdb
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netstandard2.0\Views\Agriculteur\Accueil.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netstandard2.0\Views\Agriculteur\Aide.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Release\netstandard2.0\Views\Agriculteur\question.xaml.g.cs

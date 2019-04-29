@@ -5,33 +5,33 @@
              xmlns:local="clr-namespace:WaguiApp"
              BackgroundImage="connexion.jpg"
              NavigationPage.HasNavigationBar="False">
-    <ScrollView>
-        <StackLayout Margin="40,5,20,40">
-            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red"/>
-            <Label Text="Wagui" FontAttributes="Bold" HorizontalOptions="Center" FontSize="35" TextColor="White"/>
-            <Image Source="logo.jpg" WidthRequest="100" Margin="0,0,0,10"/>
-            <Label Text="Veuillez remplir les champs ci-dessous pour vous connecter et accéder à votre compte :" FontSize="Small" TextColor="White"/>
+    <Grid>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+
+                <StackLayout  Margin="40,20,20,0">
+                    <Label Text="Wagui" FontAttributes="Bold" TextColor="White" FontSize="35" HorizontalTextAlignment="Center"/>
             
-            <StackLayout Margin="0,40,0,0">
-                <StackLayout Margin="0,0,0,15">
+                    <Image Source="logo.png" WidthRequest="100"/>
+            
+                    <Label Text="Veuillez remplir les champs ci-dessous pour vous connecter" TextColor="White" FontSize="Medium" Margin="0,10,0,20"/>
+
                     <Label Text="Email *" FontAttributes="Bold" TextColor="White" FontSize="Small"/>
-                    <local:CustomEntryApp x:Name="UsernameEntry" Keyboard="Email" Text="{Binding Email}" TextColor="White"></local:CustomEntryApp>
-                </StackLayout>
-                
-
-                <StackLayout Margin="0,0,0,15">
-                    <Label Text="Mot de passe *" FontAttributes="Bold" TextColor="White" FontSize="Small"/>
-                    <local:CustomEntryApp x:Name="PasswordEntry" IsPassword="true" TextColor="white" Text="{Binding Password}"></local:CustomEntryApp>
-                </StackLayout>
-                
-                <Label Text="J'ai oublié mon mot de passe" TextColor="White" Margin="0,0,0,15"/>
-
-                <Button BorderRadius="30" Text="Connexion" Command="{Binding SubmitCommand}" FontSize="Medium" FontAttributes="Bold" TextColor="#00a99e" BackgroundColor="White" Margin="0,0,0,20" />
-
-                <Label Text="Si vous n'avez pas de compte appuyer ci-dessous" TextColor="White" Margin="0,0,0,20"/>
-                <Button BorderRadius="30" Text="Je m'inscris" Clicked="Presentation1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="#00a99e" TextColor="White"/>
-            </StackLayout>
+                    <local:CustomEntryApp x:Name="UsernameEntry" Keyboard="Email" Text="{Binding Email}" Margin="0,5,0,20" TextColor="White"></local:CustomEntryApp>
             
-        </StackLayout>
+                    <Label Text="Mot de passe *" FontAttributes="Bold" TextColor="White" FontSize="Small"/>
+                    <local:CustomEntryApp x:Name="PasswordEntry" IsPassword="true" TextColor="white" Margin="0,5,0,20" Text="{Binding Password}" AbsoluteLayout.LayoutBounds="0,0.34,1,35"></local:CustomEntryApp>
+
+                    <Label Text="J'ai oublié mon mot de passe" TextColor="White" Margin="0,5,0,20"/>
+                    <Button BorderRadius="30" Text="Connexion" Command="{Binding SubmitCommand}" Margin="0,5,0,30" FontSize="Medium" FontAttributes="Bold" TextColor="#00a99e" BackgroundColor="White"/>
+
+                    <Label Text="Si vous n'avez pas de compte appuyer ci-dessous" Margin="0,5,0,20" TextColor="White"/>
+                    <Button BorderRadius="30" Text="Je m'inscris" Clicked="Presentation1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="#00a99e" TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
     </ScrollView>
+        <ActivityIndicator x:Name="ActivityIndicator" IsRunning="{Binding isBusy}" VerticalOptions="Center" HorizontalOptions="Center" Color="#00a99e" />
+    </Grid>
+    
 </ContentPage>

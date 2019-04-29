@@ -5,18 +5,22 @@
              BackgroundImage="presentation6.png"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
-        <StackLayout Margin="40,50,20,40">
-            <StackLayout Orientation="Horizontal" Margin="0,0,0,40">
-                <Label FontSize="25" Text="Je complète mon inscription" TextColor="White" FontAttributes="Bold"/>
-                <Image Source="close.png" WidthRequest="40">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+        <AbsoluteLayout Margin="40,50,20,40">
+            <Label FontSize="30" Text="Je complète mon inscription" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,0,0.7,1" AbsoluteLayout.LayoutFlags="All"/>
+            <Image Source="close.png" WidthRequest="20" AbsoluteLayout.LayoutBounds="0.9,0,0.1,0.1" AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
                         Tapped="Back_Clicked"
                         NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-            </StackLayout>
-            <Label FontSize="18" Margin="0,30,0,0" Text="Afin de pouvoir répondre au mieux à vos demandes, veuillez compléter votre compte WAGUI :" TextColor="White" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label FontSize="Large" 
+                   Margin="0,30,0,0" 
+                   Text="Afin de pouvoir répondre au mieux à vos demandes, veuillez compléter votre compte WAGUI :" 
+                   TextColor="White" 
+                   AbsoluteLayout.LayoutBounds="0,0.5,1,200" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+            
             <Button 
                     BackgroundColor="#fff"
                     TextColor="#00cc99"
@@ -24,11 +28,10 @@
                     FontAttributes="Bold"
                     FontSize="20"
                     BorderRadius="30"
-                    Margin="60,70,60,30"
-                    Image="droite.png"
-                    ContentLayout="Right, 40"
+                    AbsoluteLayout.LayoutBounds="0.5,0.8,0.7,60" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
                     Clicked="Inscription2"
-                />
-        </StackLayout>
+            />
+        </AbsoluteLayout>
     </ScrollView>
 </ContentPage>

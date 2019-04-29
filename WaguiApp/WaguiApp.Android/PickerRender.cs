@@ -29,6 +29,7 @@ namespace WaguiApp.Droid
         {
             ShapeDrawable border = new ShapeDrawable();
             border.Paint.Color = Android.Graphics.Color.White;
+            border.Paint.StrokeWidth = 10;
             border.SetPadding(10, 10, 10, 10);
             border.Paint.SetStyle(Paint.Style.Stroke);
 
@@ -45,7 +46,7 @@ namespace WaguiApp.Droid
             Drawable drawable = ContextCompat.GetDrawable(this.Context, resID);
             var bitmap = ((BitmapDrawable)drawable).Bitmap;
 
-            var result = new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, 70, 70, true));
+            var result = new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, 80, 80, true));
             result.Gravity = Android.Views.GravityFlags.Right;
 
             return result;

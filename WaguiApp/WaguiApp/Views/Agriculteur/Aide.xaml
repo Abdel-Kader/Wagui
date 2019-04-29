@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.Agriculteur.Aide"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Margin="10,0,20,0">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="droit.png" WidthRequest="50" HorizontalOptions="Start" Margin="30,20,0,10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            Tapped="Back_Clicked"
+                        />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Margin="0,20,0,10" Text="J'ai besoin d'aide" TextColor="#00a99e" FontSize="25" FontAttributes="Bold"/>
+                </StackLayout>
+            
+            <Grid HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label FontSize="30" Grid.Row="0" HorizontalTextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="J'ai besoin de ..." TextColor="#00a99e" FontAttributes="Bold"/>
+
+
+                    
+                    <Button 
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    Text="Main d'oeuvre"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Grid.Row="1" Grid.Column="0"
+                    Grid.RowSpan="2"
+                    ContentLayout="Top, 0"
+                    Image="art3" />
+                
+                    <Button 
+                    FontSize="25"
+                    Text="Matériels"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="1" Grid.Column="1"
+                    Grid.RowSpan="2"
+                    Image="art2"
+                    ContentLayout="Top, 0"
+                />
+
+                <Button 
+                    FontSize="25"
+                    Text="Soutien financier"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="3" Grid.Column="0"
+                    Grid.RowSpan="2"
+                    Image="art1"
+                    ContentLayout="Top, 0"
+                />
+                <Button 
+                    FontSize="25"
+                    Text="Engrais et sémence"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="3" Grid.Column="1"
+                    Grid.RowSpan="2"
+                />
+
+                <Button 
+                    FontSize="25"
+                    Text="Conseil"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="5" Grid.Column="0"
+                    Grid.RowSpan="2" 
+                    Image="art4"
+                    ContentLayout="Top, 0"
+                />
+                <Button 
+                    FontSize="25"
+                    Text="Autres"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="5" Grid.Column="1"
+                    Grid.RowSpan="2"
+                    Image="art5"
+                    ContentLayout="Top, 0"
+                />
+                
+                <Label Margin="0,25,0,10" HorizontalTextAlignment="Center"
+                       Text="Cliquez sur ce dont vous avez besoin nous essayerons de vous trouver une solution"
+                       Grid.Row="7" Grid.Column="0"
+                       Grid.ColumnSpan="2" 
+                       TextColor="#00a99e" 
+                       FontSize="Medium" 
+                       FontAttributes="Italic"
+                />
+
+
+                </Grid>
+
+        </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

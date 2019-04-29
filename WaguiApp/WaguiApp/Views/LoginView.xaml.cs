@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using WaguiApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WaguiApp.Views.Agriculteur;
 
 namespace WaguiApp.Views
 {
@@ -18,12 +19,23 @@ namespace WaguiApp.Views
         public LoginView ()
 		{
 			InitializeComponent ();
+            this.BindingContext = this;
+            this.IsBusy = false;
             App.StartCheckIfInternet(lbl_NoInternet, this);
 
             loginModel = new LoginModel();
             MessagingCenter.Subscribe<LoginModel, string>(this, "Alert", (sender, username) =>
             {
-                DisplayAlert("Alert", username, "OK");
+                this.IsBusy = true;
+                if(username == "Vous êtes maintenant connecté !")
+                {
+                    Navigation.PushAsync(new Accueil());
+                }
+                else
+                {
+                    DisplayAlert("Alert", username, "OK");
+                }
+                
             });
             this.BindingContext = loginModel;
            

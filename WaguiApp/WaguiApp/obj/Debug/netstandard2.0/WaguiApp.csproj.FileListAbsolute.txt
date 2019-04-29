@@ -3,6 +3,10 @@ D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\bin\Debug\netstand
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\bin\Debug\netstandard2.0\WaguiApp.pdb
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\AgriculteurView.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Inscription1View.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Inscription2View.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Inscription2View2.xaml.g.cs
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\PresentationView1.xaml.g.cs
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\PresentationView2.xaml.g.cs
@@ -13,11 +17,10 @@ D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstand
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\WaguiApp.csproj.CoreCompileInputs.cache
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\WaguiApp.AssemblyInfoInputs.cache
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\WaguiApp.AssemblyInfo.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\WaguiApp.dll
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\WaguiApp.pdb
 D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\WaguiApp.csprojAssemblyReference.cache
-D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Inscription1View.xaml.g.cs
-D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Inscription2View.xaml.g.cs
-D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\XamlC.stamp
-D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Inscription2View2.xaml.g.cs
-D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\AgriculteurView.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Agriculteur\Accueil.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Agriculteur\question.xaml.g.cs
+D:\Visual Studio 2017\source\repos\WaguiApp\WaguiApp\WaguiApp\obj\Debug\netstandard2.0\Views\Agriculteur\Aide.xaml.g.cs

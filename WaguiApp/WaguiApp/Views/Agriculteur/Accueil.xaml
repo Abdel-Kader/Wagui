@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.Agriculteur.Accueil" 
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Image Source="Icon.png" WidthRequest="50" HorizontalOptions="Start" Margin="30,20,0,10"/>
+            <Label Margin="30,0,0,10" Text="Que puis-je faire pour vous ?" TextColor="#00a99e" FontSize="25" FontAttributes="Bold"/>
+            <Grid HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"  Source="agriculture.jpg" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="Question"
+                            NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label FontSize="40" Grid.Row="0" HorizontalTextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="J'ai une question ?" TextColor="White" FontAttributes="Bold"/>
+                <Button BorderColor="Transparent" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" Clicked="Question" Grid.ColumnSpan="2"/>
+
+                <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"  Source="presentation7.png" Grid.Row="1" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            NumberOfTapsRequired="1"
+                            Tapped="Aide"
+                        />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label FontSize="40" Grid.Row="1" HorizontalTextAlignment="Center" Grid.Column="0" Text="J'ai besoin d'aide" TextColor="White" FontAttributes="Bold"/>
+                <Button BorderColor="Transparent" Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" Clicked="Aide"/>
+                <Button 
+                    FontSize="30"
+                    Text="Mes offres"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="1" Grid.Column="1"
+                />
+
+                <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"  Source="login.jpg" Grid.RowSpan="2" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                        NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label FontSize="35" Grid.Row="2" HorizontalTextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Text="Je souhaite augmenter ma production" TextColor="White" FontAttributes="Bold"/>
+                <Button 
+                    FontSize="20"
+                    Text="Mon portefeuille"
+                    BackgroundColor="#00a99e"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Grid.Row="4" Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                />
+                
+                
+            </Grid>
+
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

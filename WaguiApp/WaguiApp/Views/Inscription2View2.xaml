@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WaguiApp.Views.Inscription2View2"
-             BackgroundImage="presentation6.png"
+             BackgroundImage="presentation7.png"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
         <StackLayout Margin="40,25,20,40">

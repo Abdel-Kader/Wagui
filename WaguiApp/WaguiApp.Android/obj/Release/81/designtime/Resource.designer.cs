@@ -2340,7 +2340,28 @@ namespace WaguiApp.Droid
 			public const int abc_vector_test = 2131296339;
 			
 			// aapt resource value: 0x7F010002
-			public const int agriculture = 2130771970;
+			public const int accueilAgri = 2130771970;
+			
+			// aapt resource value: 0x7F010003
+			public const int agriculture = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int arrow = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int art1 = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int art2 = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int art3 = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int art4 = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int art5 = 2130771977;
 			
 			// aapt resource value: 0x7F090054
 			public const int avd_hide_password = 2131296340;
@@ -2348,11 +2369,11 @@ namespace WaguiApp.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
-			// aapt resource value: 0x7F010003
-			public const int close = 2130771971;
+			// aapt resource value: 0x7F010010
+			public const int close = 2130771984;
 			
-			// aapt resource value: 0x7F010004
-			public const int connexion = 2130771972;
+			// aapt resource value: 0x7F010011
+			public const int connexion = 2130771985;
 			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
@@ -2372,17 +2393,17 @@ namespace WaguiApp.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010005
-			public const int droit = 2130771973;
+			// aapt resource value: 0x7F010012
+			public const int droit = 2130771986;
 			
-			// aapt resource value: 0x7F010006
-			public const int droite = 2130771974;
+			// aapt resource value: 0x7F010013
+			public const int droite = 2130771987;
 			
-			// aapt resource value: 0x7F010007
-			public const int Icon = 2130771975;
+			// aapt resource value: 0x7F010014
+			public const int Icon = 2130771988;
 			
-			// aapt resource value: 0x7F010008
-			public const int ic_arrow_drop_down = 2130771976;
+			// aapt resource value: 0x7F010015
+			public const int ic_arrow_drop_down = 2130771989;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -2915,11 +2936,11 @@ namespace WaguiApp.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010009
-			public const int login = 2130771977;
+			// aapt resource value: 0x7F010016
+			public const int login = 2130771990;
 			
-			// aapt resource value: 0x7F010010
-			public const int logo = 2130771984;
+			// aapt resource value: 0x7F010017
+			public const int logo = 2130771991;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
@@ -3020,26 +3041,35 @@ namespace WaguiApp.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010011
-			public const int presentation1 = 2130771985;
+			// aapt resource value: 0x7F010018
+			public const int presentation1 = 2130771992;
 			
-			// aapt resource value: 0x7F010012
-			public const int presentation2 = 2130771986;
+			// aapt resource value: 0x7F010019
+			public const int presentation2 = 2130771993;
 			
-			// aapt resource value: 0x7F010013
-			public const int presentation3 = 2130771987;
+			// aapt resource value: 0x7F010020
+			public const int presentation3 = 2130772000;
 			
-			// aapt resource value: 0x7F010014
-			public const int presentation4 = 2130771988;
+			// aapt resource value: 0x7F010021
+			public const int presentation4 = 2130772001;
 			
-			// aapt resource value: 0x7F010015
-			public const int presentation5 = 2130771989;
+			// aapt resource value: 0x7F010022
+			public const int presentation5 = 2130772002;
 			
-			// aapt resource value: 0x7F010016
-			public const int presentation6 = 2130771990;
+			// aapt resource value: 0x7F010023
+			public const int presentation6 = 2130772003;
 			
-			// aapt resource value: 0x7F010017
-			public const int splash = 2130771991;
+			// aapt resource value: 0x7F010024
+			public const int presentation7 = 2130772004;
+			
+			// aapt resource value: 0x7F010025
+			public const int record = 2130772005;
+			
+			// aapt resource value: 0x7F010026
+			public const int right = 2130772006;
+			
+			// aapt resource value: 0x7F010027
+			public const int splash = 2130772007;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;

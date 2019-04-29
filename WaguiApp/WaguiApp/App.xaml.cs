@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using WaguiApp.Models;
 using WaguiApp.Data;
+using WaguiApp.Views.Agriculteur;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace WaguiApp

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaguiApp.Views.Agriculteur.question"
+             xmlns:local="clr-namespace:WaguiApp"
+             NavigationPage.HasNavigationBar="False" BackgroundImage="accueilAgri.jpg">
+
+    <AbsoluteLayout Margin="40,20,20,0">
+        
+        <Image Source="droit.png" WidthRequest="50" AbsoluteLayout.LayoutBounds="0,0,0.1,0.1" AbsoluteLayout.LayoutFlags="All">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                        Tapped="Back_Clicked"
+                        NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Label FontSize="25" Text="J'ai une question" TextColor="#00a99e" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,0.027,1,100" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" HorizontalTextAlignment="Center"/>
+
+
+        <Label Text="Un conseil, une question, nous sommes à votre écoute" TextColor="#00a99e" AbsoluteLayout.LayoutBounds="0,0.3,1,140" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" FontSize="Large" FontAttributes="Bold"/>
+            <local:BorderedEntryApp Placeholder="Demandez-nous ce que vous voulez"  AbsoluteLayout.LayoutBounds="0,0.5,1,50" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" TextColor="#00a99e" x:Name="NomEntry" Text="{Binding Nom}"></local:BorderedEntryApp>
+
+        <!-- <Label AbsoluteLayout.LayoutBounds="0,0.5,1,100" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" Text="Vous recevez une notification une fois que votre question traitée" TextColor="#00a99e" FontSize="Medium" Margin="0,20,0,0" FontAttributes="Italic"/>
+
+
+      <Button BackgroundColor="#fff"
+                BorderRadius="150"
+                AbsoluteLayout.LayoutBounds="0.5,0.7,0.4,125" 
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                BorderWidth="1"
+                Image="record.png"
+                Text="Appuyez pour parler"
+                BorderColor="#009999"
+                ContentLayout="Top, 5"
+                Command="{Binding SubmitCommand}"
+            />
+        -->
+
+        <Button 
+                BackgroundColor="#009999"
+                TextColor="#fff"
+                Text="Valider ma question"
+                FontAttributes="Bold"
+                FontSize="25"
+                BorderRadius="60"
+                AbsoluteLayout.LayoutBounds="0.5,0.9,0.8,60" 
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                BorderWidth="1"
+                BorderColor="#009999"
+                Command="{Binding SubmitCommand}"
+            />
+        
+    </AbsoluteLayout>
+</ContentPage>

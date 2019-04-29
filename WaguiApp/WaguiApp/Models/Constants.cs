@@ -14,7 +14,7 @@ namespace WaguiApp.Models
 
         public static int LoginIconHeight = 70;
 
-
+        //http://mobile.waguispace.com/V1/;
         public static string ApiUrl = "https://wagui.000webhostapp.com/V1/";
 
         public static string NoInternetText = "Vous n'êtes pas connecté à internet! Veuillez vérifier votre connexion";

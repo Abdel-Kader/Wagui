@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WaguiApp.Views.Agriculteur;
 
 namespace WaguiApp.Views
 {
@@ -20,6 +21,12 @@ namespace WaguiApp.Views
         private async void Back_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+        }
+
+        private async void Accueil(object sender, EventArgs e)
+        {
+            DisplayAlert("Alert", "Bienvenue sur Wagui", "Fermer");
+            await Navigation.PushAsync(new Accueil());
         }
     }
 }

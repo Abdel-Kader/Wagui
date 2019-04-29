@@ -6,43 +6,64 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout HorizontalOptions="FillAndExpand" Padding="20,50,20,10" Spacing="0">
+            <AbsoluteLayout Padding="20,0,20,0">
                 <Label Text="En répondant à toutes vos questions"
                        TextColor="#fff"
                        FontSize="27"
-                       Margin="0,0,0,40"
+                       FontAttributes="Bold"
+                       AbsoluteLayout.LayoutBounds="0,0.15,1,100" Margin="0,0,0,20" 
+                       AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" HorizontalTextAlignment="Center"
                 />
 
                 <Label Text="Wagui, c'est de nombreux agronomes spécialisés, prêts à répondre à toutes vos questions. Par exemple :"
                        TextColor="#fff"
                        FontSize="20"
-                       Margin="0,0,0,20"
+                       AbsoluteLayout.LayoutBounds="0,0.3,1,100" 
+                       AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                       HorizontalTextAlignment="Center"
                 />
 
                 <Label Text="Pourquoi mes tomates ont cette couleur ?"
                        TextColor="#fff"
                        FontSize="20"
-                       Margin="0,0,0,20"
+                       AbsoluteLayout.LayoutBounds="0,0.5,1,100" 
+                       AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                       HorizontalTextAlignment="Center"
                 />
 
                 <Label Text="Mes récoltes ne donnent plus autant qu'avant, est-ce normal ?"
                        TextColor="#fff"
                        FontSize="20"
-                       Margin="0,0,0,20"
+                       AbsoluteLayout.LayoutBounds="0,0.7,1,100" 
+                       AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                       HorizontalTextAlignment="Center"
                 />
+
+                <Button 
+                    BackgroundColor="#00cc99"
+                    TextColor="#fff"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    Text="Passer"
+                    Clicked="Inscription"
+                    AbsoluteLayout.LayoutBounds="0,1,0.5,50" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                
+                />
+                
                 <Button 
                     BackgroundColor="#fff"
                     TextColor="#00cc99"
-                    Text="Suivant"
                     FontAttributes="Bold"
                     FontSize="20"
                     BorderRadius="30"
                     Clicked="Presentation3"
-                    Margin="60,70,60,30"
                     Image="droite.png"
-                    ContentLayout="Right, 40"
+                    AbsoluteLayout.LayoutBounds="1,1,60,60" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional" 
                 />
-            </StackLayout>
+
+            </AbsoluteLayout>
         </ScrollView>
 
     </ContentPage.Content>

@@ -25,6 +25,7 @@ namespace WaguiApp.Views
             {
                 if(nom == "Yess")
                 {
+                    DisplayAlert("Alert", "Félicitation vous venez de créer votre compte ! Veuillez compléter votre inscription", "Continuer");
                     Navigation.PushAsync(new Inscription1View());
                     //App.UserDatabase.SaveUser(user);
                 }

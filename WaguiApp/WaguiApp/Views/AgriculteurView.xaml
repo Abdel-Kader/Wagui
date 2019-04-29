@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WaguiApp.Views.AgriculteurView"
-             BackgroundImage="agriculture.jpg"
+             BackgroundImage="presentation7.png"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
         <StackLayout>
@@ -54,13 +54,12 @@
             <Button 
                     BackgroundColor="#00a99e"
                     TextColor="#fff"
-                    Text="Suivant"
+                    Text="Enregistrer"
                     FontAttributes="Bold"
                     FontSize="20"
                     BorderRadius="30"
                     Margin="60,70,60,30"
-                    Image="droite.png"
-                    ContentLayout="Right, 40"
+                    Clicked="Accueil"
                 
                 />
         </StackLayout>

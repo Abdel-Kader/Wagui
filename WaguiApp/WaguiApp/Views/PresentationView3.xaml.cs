@@ -21,5 +21,10 @@ namespace WaguiApp.Views
         {
             await Navigation.PushAsync(new PresentationView4());
         }
+
+        private async void Inscription(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignInView());
+        }
     }
 }

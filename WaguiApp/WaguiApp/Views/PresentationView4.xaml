@@ -6,26 +6,38 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout HorizontalOptions="FillAndExpand" Padding="20, 150, 20, 30" Spacing="0">
+            <AbsoluteLayout Padding="20,0,20,0">
                 <Label Text="En vous permettant d'investir dans un projet sûr"
                        TextColor="#fff"
                        FontSize="30"
-                       Margin="0,0,0,40"/>
+                       Margin="0,0,0,40" 
+                       AbsoluteLayout.LayoutBounds="0,0.2,1,200"
+                       AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" HorizontalTextAlignment="Center"/>
+
+                <Button 
+                    BackgroundColor="#00cc99"
+                    TextColor="#fff"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    Text="Passer"
+                    Clicked="Inscription"
+                    AbsoluteLayout.LayoutBounds="0,1,0.30,60" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                
+                />
 
                 <Button 
                     BackgroundColor="#fff"
                     TextColor="#00cc99"
-                    Text="Suivant"
                     FontAttributes="Bold"
                     FontSize="20"
                     BorderRadius="30"
                     Clicked="Presentation5"
-                    Margin="60,90,60,30"
                     Image="droite.png"
-                    ContentLayout="Right, 20"
-                    
+                    AbsoluteLayout.LayoutBounds="1,1,60,60" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional" 
                 />
-            </StackLayout>
+            </AbsoluteLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

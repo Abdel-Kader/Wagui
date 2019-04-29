@@ -2,58 +2,64 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WaguiApp.Views.Inscription2View"
-             BackgroundImage="presentation6.png"
+             BackgroundImage="presentation7.png"
              NavigationPage.HasNavigationBar="False"
              xmlns:local="clr-namespace:WaguiApp">
     <ScrollView>
-        <StackLayout>
-            <StackLayout Padding="5,0,0,0" Margin="20,30,0,0" Orientation="Horizontal">
-                <Image Source="droit.png" WidthRequest="40" Margin="20,0,0,0"
-                    >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+        <AbsoluteLayout Margin="40,20,20,40">
+   
+            <Image Source="droit.png" WidthRequest="20" AbsoluteLayout.LayoutBounds="0,0,0.1,0.1" AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
                         Tapped="Back_Clicked"
                         NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                <Label 
-                    FontSize="23" 
-                    Text="Je complète mon compte" 
-                    TextColor="White" FontAttributes="Bold"
-                    Margin="30,20,0,40"
-                    />
-            </StackLayout>
-            <Label Margin="30,20,0,25" FontSize="18" Text="Wagui met en relation différents acteurs du domaine agricole. De quel groupe faites-vous parti ?" TextColor="White" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Label FontSize="30" Text="Je complète mon inscription" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutBounds=".7,0,0.7,1" AbsoluteLayout.LayoutFlags="All"/>
+            
+            <Label
+                   FontSize="Large" 
+                   Text="Wagui met en relation différents acteurs du domaine agricole. De quel groupe faites-vous parti ?" 
+                   TextColor="White" 
+                   AbsoluteLayout.LayoutBounds="0,0.3,1,200" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+            />
 
             <local:CustomPicker x:Name="Typecompte"
-                     HeightRequest="40" 
-                     Image="ic_arrow_drop_down"
+                    Image="ic_arrow_drop_down"
                     TextColor="White"
                     WidthRequest="200"
-                    Margin="30,20,30,20"
+                    FontAttributes="Bold"
                     SelectedIndexChanged="AlertPicker"
-                     Title="Choisir mon type de compte">
-                <local:CustomPicker.Items>
-                    <x:String>Agriculteur</x:String>
+                    AbsoluteLayout.LayoutBounds="0,0.5,1,70"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                    Title="Choisir mon type de compte">
+                <local:CustomPicker.Items >
+                    <x:String >Agriculteur</x:String>
                     <x:String>Agronome</x:String>
                     <x:String>Investisseur</x:String>
                     <x:String>Demandeur</x:String>
                 </local:CustomPicker.Items>
-                </local:CustomPicker>
-            <Label x:Name="detailLabel" TextColor="white" Margin="30,30,0,0"/>
+            </local:CustomPicker>
+            
+            <Label x:Name="detailLabel" 
+                   TextColor="white" 
+                   Margin="30,30,0,0"
+                   FontSize="Medium"
+                   AbsoluteLayout.LayoutBounds="0,0.9,1,250" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                   />
 
             <Button 
                     BackgroundColor="#00a99e"
                     TextColor="#fff"
                     Text="Suivant"
                     FontAttributes="Bold"
-                    FontSize="20"
+                    FontSize="25"
                     BorderRadius="30"
-                    Margin="50,50,50,30"
-                    Image="droite.png"
-                    ContentLayout="Right, 10"
+                    AbsoluteLayout.LayoutBounds="0.5,1,0.7,60" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
                     Clicked="NextPage"
                 />
-        </StackLayout>
+        </AbsoluteLayout>
     </ScrollView>
 </ContentPage>

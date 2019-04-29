@@ -5,26 +5,29 @@
              BackgroundImage="presentation1.jpg"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
-        <StackLayout HorizontalOptions="FillAndExpand" Padding="0,90,0,10" Spacing="0">
+        <AbsoluteLayout Padding="20,0,20,0">
             <Label 
-                    Text="Wagui à votre service"
-                    FontSize="27"
-                    TextColor="#fff"  
-                   XAlign="Center"
-                    Margin="0,0,0,40"
-                />
+                Text="Wagui à votre service"
+                FontSize="30"
+                TextColor="#fff" 
+                FontAttributes="Bold"
+                AbsoluteLayout.LayoutBounds="0,0.15,1,100" Margin="0,0,0,20" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" HorizontalTextAlignment="Center"
+            />
 
             <Label Text="Chaque jour grâce à Wagui, des agriculteurs, des agronomes, des demandeurs d'emplois et même des investisseurs trouvent les moyens pour satisfaire leurs plus belles ambitions."
-                       TextColor="#fff"
-                       FontSize="20"
-                       XAlign="Center"
-                       Margin="0,0,0,40"
+                    TextColor="#fff"
+                    FontSize="20"
+                   AbsoluteLayout.LayoutBounds="0,0.3,1,200" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                   HorizontalTextAlignment="Center"
                 />
 
             <Label Text="Découvrez comment en seulement 3 étapes..."
-                       TextColor="#fff"
-                       FontSize="20"
-               XAlign="Center"
+                    TextColor="#fff"
+                    FontSize="20"
+                    AbsoluteLayout.LayoutBounds="0,0.6,1,60" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                   HorizontalTextAlignment="Center"
                 />
 
             <Button 
@@ -35,11 +38,10 @@
                 FontSize="20"
                 BorderRadius="30"
                 Clicked="Presentation2"
-                Margin="60,70,60,30"
-                
-                    
-                />
-        </StackLayout>
+                AbsoluteLayout.LayoutBounds="0.5,0.8,0.7,60" 
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+            />
+        </AbsoluteLayout>
 
     </ScrollView>
 

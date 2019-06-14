@@ -1,0 +1,227 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "93ef3262d7d75eb315201c588c46598d2218b839"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Wagui/1.0.0": {
+        "dependencies": {
+          "IntelliAbb.Xamarin.Controls": "1.0.148",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.2",
+          "Xam.Plugin.Media": "4.2.0-beta",
+          "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
+          "Xamarin.Essentials": "1.1.0",
+          "Xamarin.Forms": "4.0.0.482894"
+        },
+        "runtime": {
+          "Wagui.dll": {}
+        }
+      },
+      "IntelliAbb.Xamarin.Controls/1.0.148": {
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.60.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IntelliAbb.Xamarin.Controls.dll": {
+            "assemblyVersion": "1.0.148.0",
+            "fileVersion": "1.0.148.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        }
+      },
+      "Plugin.Permissions/4.0.4-beta": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp/1.60.3": {
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.3.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.60.3": {
+        "dependencies": {
+          "SkiaSharp": "1.60.3",
+          "Xamarin.Forms": "4.0.0.482894"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.3.0"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "Xam.Plugin.Media/4.2.0-beta": {
+        "dependencies": {
+          "Plugin.Permissions": "4.0.4-beta"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "4.0.0.482894"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.1.0": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms/4.0.0.482894": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.0.0.139"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.0.0.139"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.0.0.139"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Wagui/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IntelliAbb.Xamarin.Controls/1.0.148": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rJzqyBhDM87Dxv1TUl0ySbEuU7fpTLZl6dkjDx0A90u0pEzhHPAOqtQlKaRmj2098pmwFX+lIOXXmgc8raqGLA==",
+      "path": "intelliabb.xamarin.controls/1.0.148",
+      "hashPath": "intelliabb.xamarin.controls.1.0.148.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "Plugin.Permissions/4.0.4-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yrBxbRNhR0Dav1C52YrJvSz6TCNbBvAIf6EnSdAgTySUg8hbK2qLKj/vmT6MppzhJGWvvi9+ivHU1yiOgSP/Ew==",
+      "path": "plugin.permissions/4.0.4-beta",
+      "hashPath": "plugin.permissions.4.0.4-beta.nupkg.sha512"
+    },
+    "SkiaSharp/1.60.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOX0ksqw2Xwkjhi8PpL9YsbYhNDveS9FzJglCTC1HzrTXkwEoNi+DGA3Wh2zVx2qGtW/UbVVpyJ+/KTSV9xSLQ==",
+      "path": "skiasharp/1.60.3",
+      "hashPath": "skiasharp.1.60.3.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Forms/1.60.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwxqM2sskGH0EKCbf1KmKbMq0NEj85k6VuTn8B1ghivCFn2VomsfxtILUsIpSjydE67VdYStVUbn/fEtsHsPgQ==",
+      "path": "skiasharp.views.forms/1.60.3",
+      "hashPath": "skiasharp.views.forms.1.60.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/4.2.0-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tYWdC9zUZ2SrqjD3SAZ2dTAKNE+f4GA6t1KN7HKSWHPPncRvhFcqVd1vwljdRhsnEHaaqVSDMfAEKAC3xso0dg==",
+      "path": "xam.plugin.media/4.2.0-beta",
+      "hashPath": "xam.plugin.media.4.2.0-beta.nupkg.sha512"
+    },
+    "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
+      "path": "xam.plugins.forms.imagecircle/3.0.0.5",
+      "hashPath": "xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W0XOt1dNMAE2POcsVotoKDDy5FdAOnR0qULKl6WI4kQEMxQ1sp84DsSU5iacV7oQUMuPhUBAm/3ywks0HO1QrQ==",
+      "path": "xamarin.essentials/1.1.0",
+      "hashPath": "xamarin.essentials.1.1.0.nupkg.sha512"
+    },
+    "Xamarin.Forms/4.0.0.482894": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2K1/jCyor3CYYxEBMDMrIUhTOD0sxiipdmJTbj9NYBnV3iJKblnBRWPoi06Is4cSoXC7G6sWSuF2b6cYxigEjg==",
+      "path": "xamarin.forms/4.0.0.482894",
+      "hashPath": "xamarin.forms.4.0.0.482894.nupkg.sha512"
+    }
+  }
+}

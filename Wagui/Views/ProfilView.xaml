@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.ProfilView"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#fff">
+    <ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="AUTO" />
+            </Grid.RowDefinitions>
+
+            <!-- header background -->
+            <Image Source="HeaderBackground.png" Aspect="AspectFill"/>
+            <Image Source="CurvedMask.png" VerticalOptions="End" Aspect="AspectFill" Margin="0,0,0,-1"/>
+
+            <!-- profile image -->
+            <Image Source="profil" Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
+
+            <!-- Profile Name -->
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
+                <StackLayout Orientation="Horizontal">
+                    <Label HorizontalTextAlignment="Center" x:Name="nom" Style="{StaticResource ProfileNameLabel}"/>
+                    <Label HorizontalTextAlignment="Center" x:Name="prenom" Style="{StaticResource ProfileNameLabel}"/>
+                </StackLayout>
+                
+                <Label HorizontalTextAlignment="Center" x:Name="tel" Margin="0,-5" Style="{StaticResource ProfileTagLabel}"/>
+            </StackLayout>
+
+            <!-- Social Stats Section -->
+            <Grid Grid.Row="2" ColumnSpacing="0" RowSpacing="0" Margin="0,30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout>
+                    <Label Text="05" Style="{StaticResource StatsNumberLabel}"/>
+                    <Label Text="Productions vendues" Style="{StaticResource StatsCaptionLabel}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1">
+                    <Label Text="04" Style="{StaticResource StatsNumberLabel}"/>
+                    <Label Text="Productions sur le marché" Style="{StaticResource StatsCaptionLabel}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+                    <Label Text="09" Style="{StaticResource StatsNumberLabel}"/>
+                    <Label Text="Total" Style="{StaticResource StatsCaptionLabel}"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- follow button -->
+            <Button Grid.Row="3" Text="Completer mon inscription" IsVisible="False" x:Name="EditBtn" Clicked="Edit_profil" Margin="20" VerticalOptions="End" Style="{StaticResource FollowButton}"/>
+            
+            <Button Grid.Row="4" Text="Modifier mes informations" Margin="20" VerticalOptions="End" Style="{StaticResource FollowButton}"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

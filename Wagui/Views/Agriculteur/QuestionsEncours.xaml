@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Wagui.Views.Agriculteur.QuestionsEncours"
+             Title="Mes questions en cours">
+    <ScrollView>
+        <StackLayout Margin="10">
+            <StackLayout 
+                IsVisible="True" 
+                x:Name="activity" 
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <ActivityIndicator IsRunning="True" Color="#00a99e" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Label
+                FontAttributes="Bold"
+                Text="Chargement en cours..."
+                TextColor="#00a99e" 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+            />
+            </StackLayout>
+            
+            <ListView x:Name="MyListView"
+                  HasUnevenRows="True" IsPullToRefreshEnabled="true"
+                  RefreshControlColor="Red"
+                  SeparatorVisibility="None" 
+                  IsVisible="False"
+                  HorizontalOptions="FillAndExpand" 
+                  VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame 
+                                IsClippedToBounds="True"
+                                HasShadow="True"
+                                BackgroundColor="#fff"
+                                Margin="7"
+                                Padding="5">
+                                <Frame.OutlineColor>
+                                    <OnPlatform x:TypeArguments="Color"
+                                Android="White"
+                                iOS="White"/>
+                                </Frame.OutlineColor>
+                                <StackLayout>
+                                    <Label Text="{Binding Question}" TextColor="#00a99e" FontAttributes="Bold" FontSize="20"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Question posée le :"  />
+                                        <Label Text="{Binding Date_debut}" FontAttributes="Bold"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Pas encore de réponse"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

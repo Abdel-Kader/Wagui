@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Wagui.Services"
+             x:Class="Wagui.Views.Inscription.Inscription2"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="ins_agri1" x:Name="content">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout x:Name="Main">
+                    <StackLayout Orientation="Horizontal" Margin="20,30,0,30">
+                        <Image Source="ar2_left.png" HorizontalOptions="StartAndExpand" Margin="0,0,30,0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="Back_Clicked"
+                                    NumberOfTapsRequired="1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Label Text="Je complète mon inscription" FontAttributes="Bold" TextColor="White" FontSize="30" HorizontalOptions="EndAndExpand"/>
+
+                    </StackLayout>
+                    
+                    <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid" Margin="40,0,40,50">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Grid.Row="1" Margin="0,20,0,50" HorizontalTextAlignment="Start" Text="Wagui met en relation différents acteurs du domaine agricole. De quel groupe faites-vous parti ?" TextColor="White" FontSize="23"/>
+
+                        <StackLayout Grid.Row="2">
+                            <Label Text="Choisir votre type de compte" FontAttributes="Bold" FontSize="20" TextColor="#fff"/>
+                            <local:CustomPicker x:Name="Typecompte"
+                                Image="ic_arrow_drop_down"
+                                TextColor="Black"
+                                WidthRequest="200"
+                                FontSize="20"
+                                HeightRequest="60"
+                                BackgroundColor="#fff"
+                                FontAttributes="Bold"
+                                SelectedIndexChanged="AlertPicker"
+                                Title="Choisir mon type de compte">
+                                
+                                <local:CustomPicker.Items >
+                                    <x:String >Agriculteurs</x:String>
+                                    <x:String>Agronome</x:String>
+                                    <x:String>Acheteurs</x:String>
+                                </local:CustomPicker.Items>
+                            </local:CustomPicker>
+
+                            <Label x:Name="detailLabel" 
+                               TextColor="white" 
+                               FontSize="Medium"
+                               
+                            />
+                        </StackLayout>
+                        <AbsoluteLayout Grid.Row="3">
+                            <Button
+                                BackgroundColor="#01a89e"
+                                TextColor="#fff"
+                                Text="Suivant"
+                                FontAttributes="Bold"
+                                FontSize="30"
+                                BorderRadius="30"
+                                Clicked="NextPage"
+                                AbsoluteLayout.LayoutBounds="0.5,120,1,70" 
+                                AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" 
+                                HorizontalOptions="FillAndExpand"
+                                Image="ar2_right"
+                                ContentLayout="Right,0"
+                        />
+                        </AbsoluteLayout>
+
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

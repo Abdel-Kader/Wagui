@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agriculteur.AchatPage.DetailArticle"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <Frame Margin="15,15,15,0"  BackgroundColor="#004e45" CornerRadius="20">
+                <Grid x:Name="MainGrid2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Poivrons" TextColor="#fff" FontSize="30" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+                    <Label Text="Oyen/Weoleu-Ntem" TextColor="#a0cecc" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
+
+                    <StackLayout BackgroundColor="#1d8e89" Grid.Row="1" Grid.Column="0" Margin="0,20,0,0">
+                        <Label Text="Vendeur :" TextColor="#a0cecc"/>
+                        <Label Text="Clotaire" TextColor="#fff" FontSize="20"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#1d8e89" Grid.Row="1" Grid.Column="1" Margin="0,20,0,0">
+                        <Label Text="Quantité :" TextColor="#a0cecc" />
+                        <Label Text="300 KG" TextColor="#fff" FontSize="21"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,20,0,0">
+                        <Image Source="poivron"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3" BackgroundColor="#005e53" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,20,0,0">
+                        <Label Text="Je dispose de poivrons cultivés dans une grande plantation situé à Oyem" TextColor="#fff" FontSize="20"/>
+                    </StackLayout>
+                    <Label Text="TOTAL (net à payer) :"  Grid.Column="0" BackgroundColor="#1d8e89" Margin="0,20,0,0" Grid.Row="4" TextColor="#a0cecc" HeightRequest="50" />
+                    <Label Text="300 000FCFA" FontSize="23" TextColor="#fff" FontAttributes="Bold" Grid.Column="1" BackgroundColor="#1d8e89" Margin="0,20,0,0" Grid.Row="4" HeightRequest="50"/>
+
+                    <StackLayout Orientation="Horizontal" Grid.Row="5" Margin="0,20,0,0" Grid.Column="0" Grid.ColumnSpan="2">
+                        <Button
+                            CornerRadius="20"
+                            BackgroundColor="#004e45"
+                            WidthRequest="85"
+                            HorizontalOptions="StartAndExpand"
+                            BorderColor="#fff"
+                            BorderWidth="1"
+                            Image="ar_left"
+                            HeightRequest="60"
+                            Clicked="Back_Clicked"
+                        />
+                        <Button Text="Je suis intéressé"
+                            CornerRadius="30"
+                            BackgroundColor="#fff"
+                            Padding="15"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            TextColor="#1d8e89"
+                            FontSize="20"
+                        />
+
+                    </StackLayout>
+
+                </Grid>
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

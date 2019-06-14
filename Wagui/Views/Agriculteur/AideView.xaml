@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agriculteur.AideView">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image 
+                Source="profil"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Start" WidthRequest="55"
+            />
+            <Label 
+                Text="J'ai besoin d'aide"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
+                TextColor="#fff"
+            />
+
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <StackLayout>
+        <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+        
+        <ScrollView>
+            <StackLayout x:Name="Main">
+                <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid" Margin="20,30,20,0" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80*"></RowDefinition>
+                        <RowDefinition Height="80*"></RowDefinition>
+                        <RowDefinition Height="80*"></RowDefinition>
+                        <RowDefinition Height="80*"></RowDefinition>
+                        <RowDefinition Height="80*"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label FontSize="20" Grid.Row="0" HorizontalTextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="J'ai besoin de ..." TextColor="#00a99e" FontAttributes="Bold"/>
+
+                    <Button 
+                        BackgroundColor="#00a99e"
+                        TextColor="White"
+                        Text="Vendre ma production"
+                        FontSize="25"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        Grid.Row="1" Grid.Column="0"
+                        Grid.RowSpan="2"
+                        ContentLayout="Top, 0"
+                        Image="art1" 
+                        Clicked="Vente_production"
+                    />
+
+                    <Button 
+                        FontSize="25"
+                        Text="Transport"
+                        BackgroundColor="#00a99e"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Grid.Row="1" Grid.Column="1"
+                        Grid.RowSpan="2"
+                        Image="art2"
+                        ContentLayout="Top, 0"
+                    />
+
+                    <Button 
+                        FontSize="25"
+                        Text="Analyser"
+                        BackgroundColor="#00a99e"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Grid.Row="3" Grid.Column="0"
+                        Grid.RowSpan="2"
+                        Image="art6"
+                        ContentLayout="Top, 0"
+                    />
+                   
+                    <Button 
+                        FontSize="25"
+                        Text="Autres"
+                        BackgroundColor="#00a99e"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Grid.Row="3" Grid.Column="1"
+                        Grid.RowSpan="2"
+                        Image="art5"
+                        ContentLayout="Top, 0"
+                    />
+
+                    <Label 
+                       Margin="0,25,0,10" HorizontalTextAlignment="Start"
+                       Text="Cliquez sur ce dont vous avez besoin nous essayerons de vous trouver une solution"
+                       Grid.Row="5" Grid.Column="0"
+                       Grid.ColumnSpan="2" 
+                       TextColor="#00a99e" 
+                       FontAttributes="Italic"
+                    />
+
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>

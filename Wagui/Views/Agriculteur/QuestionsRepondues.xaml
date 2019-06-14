@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Wagui.Views.Agriculteur.QuestionsRepondues"
+             Title="Mes questions répondues">
+    <ScrollView>
+        <StackLayout Margin="10">
+
+            <Frame 
+                IsClippedToBounds="True"
+                HasShadow="True"
+                BackgroundColor="#fff"
+                Margin="7"
+                Padding="5"
+            >
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="White"
+                                iOS="White"/>
+                </Frame.OutlineColor>
+                <StackLayout>
+                    <Label Text="Comment planter une banane ?" TextColor="#00a99e" FontAttributes="Bold" FontSize="17"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Question posée le :"  />
+                        <Label Text="15/05/2019" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Répondue par :"  />
+                        <Label Text="Sacha" TextColor="#00a99e" FontAttributes="Bold"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+
+            <Frame 
+                IsClippedToBounds="True"
+                HasShadow="True"
+                BackgroundColor="#fff"
+                Margin="7"
+                Padding="5"
+            >
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="White"
+                                iOS="White"/>
+                </Frame.OutlineColor>
+                <StackLayout>
+                    <Label Text="Comment planter une banane ?" TextColor="#00a99e" FontAttributes="Bold" FontSize="17"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Question posée le :"  />
+                        <Label Text="15/05/2019" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Répondue par :"  />
+                        <Label Text="Alice" TextColor="#00a99e" FontAttributes="Bold"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+
+            <Frame 
+                IsClippedToBounds="True"
+                HasShadow="True"
+                BackgroundColor="#fff"
+                Margin="7"
+                Padding="5"
+            >
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="White"
+                                iOS="White"/>
+                </Frame.OutlineColor>
+                <StackLayout>
+                    <Label Text="Comment planter une banane ?" TextColor="#00a99e" FontAttributes="Bold" FontSize="17"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Question posée le :"  />
+                        <Label Text="15/05/2019" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Répondue par :"  />
+                        <Label Text="Jean" TextColor="#00a99e" FontAttributes="Bold"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+
+            <Frame 
+                IsClippedToBounds="True"
+                HasShadow="True"
+                BackgroundColor="#fff"
+                Margin="7"
+                Padding="5"
+            >
+                <Frame.OutlineColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="White"
+                                iOS="White"/>
+                </Frame.OutlineColor>
+                <StackLayout>
+                    <Label Text="Comment planter une banane ?" TextColor="#00a99e" FontAttributes="Bold" FontSize="17"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Question posée le :"  />
+                        <Label Text="15/05/2019" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Répondue par :"  />
+                        <Label Text="Ben" TextColor="#00a99e" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

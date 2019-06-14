@@ -1,0 +1,1 @@
+D:\Projects\VSProjects\Wagui\Wagui\Wagui.UWP\Wagui.UWP.csproj;x86

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Wagui.Services"
+             x:Class="Wagui.Views.Agriculteur.VentePage.AjoutArticlePage"
+             NavigationPage.HasNavigationBar="True">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image 
+                Source="profil"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Start" WidthRequest="55"
+            />
+            <Label 
+                Text="Ajouter un nouvel article"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="CenterAndExpand"
+                TextColor="#fff"
+            />
+            
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    
+    <ContentPage.Content>
+
+        <ScrollView BackgroundColor="#f6f6f6">
+            <StackLayout>
+                
+                <Frame Margin="10,20,10,20" HasShadow="True" CornerRadius="10" BackgroundColor="#fff">
+                    <Grid x:Name="MainGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="120"></RowDefinition>
+                            <RowDefinition Height="120"></RowDefinition>
+                            <RowDefinition Height="120"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout BackgroundColor="#f6f6f6" Margin="10,10,10,0" Grid.Row="0" Grid.ColumnSpan="2">
+                           
+                            <Label Text="Choisissez votre type d'article :" HorizontalOptions="StartAndExpand"/>
+                            <local:CustomPicker 
+                                x:Name="TypeArticle"
+                                Image="ic_arrow_drop_down"
+                                TextColor="#1d8e89"
+                                HorizontalOptions="FillAndExpand"
+                                Title="Type d'article">
+
+                                <local:CustomPicker.Items >
+                                    <x:String >Poivrons</x:String>
+                                    <x:String>Tomates</x:String>
+                                    <x:String >Laitues</x:String>
+                                    <x:String>Choux</x:String>
+                                </local:CustomPicker.Items>
+                            </local:CustomPicker>
+                        </StackLayout>
+
+                        <StackLayout Margin="10,10,10,0" BackgroundColor="#f6f6f6" Grid.Row="1" Grid.ColumnSpan="2">
+                            <StackLayout Padding="10">
+                                <Label Text="Localisation :"/>
+                            </StackLayout>
+                            <local:BorderEntry 
+                                x:Name="LieuEntry" 
+                                Text="{Binding Localisation}" 
+                                BackgroundColor="#f6f6f6"
+                                TextColor="#1d8e89"
+                                HorizontalOptions="FillAndExpand"
+                                Placeholder="Ex: Oyem/ Woleu-Ntem"
+                            >
+                            </local:BorderEntry>
+                        </StackLayout>
+
+                        <StackLayout Margin="10,10,10,0" BackgroundColor="#f6f6f6" Grid.Row="2" Grid.ColumnSpan="2">
+                            <StackLayout Padding="10">
+                                <Label Text="Prix / KG :"/>
+                            </StackLayout>
+                            <local:BorderEntry 
+                                x:Name="PrixEntry" 
+                                Text="{Binding Prix}" 
+                                BackgroundColor="#f6f6f6"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="#1d8e89"
+                                Placeholder="Ex: 1000 FCFA"
+                            >
+                            </local:BorderEntry>
+                        </StackLayout>
+
+                        <StackLayout Margin="10,10,10,0" BackgroundColor="#f6f6f6" Grid.Row="3" Grid.ColumnSpan="2">
+                            <StackLayout Padding="10">
+                                <Label Text="Quantité :"/>
+                            </StackLayout>
+                            <local:BorderEntry 
+                                x:Name="QuantiteEntry" 
+                                Text="{Binding Quantite}" 
+                                BackgroundColor="#f6f6f6"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="#1d8e89"
+                                Placeholder="Ex: 350 KG"
+                            >
+                            </local:BorderEntry>
+                        </StackLayout>
+
+                        <StackLayout Margin="10,10,10,0" BackgroundColor="#f6f6f6" Grid.Row="4" Grid.ColumnSpan="2">
+                            <StackLayout Padding="10">
+                                <Label Text="Commentaire :"/>
+                            </StackLayout>
+                            <Editor 
+                                BackgroundColor="#f6f6f6"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="#1d8e89"
+                                Placeholder="Je dispose de poivrons cultivés............"
+                            />
+                        </StackLayout>
+
+                        <Button Margin="10,10,10,0" BorderColor="#1d8e89" Grid.Row="5" Grid.Column="0" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo1" WidthRequest="10"/>
+                        <Image x:Name="MainImage1" Grid.Row="5" Grid.Column="1" />
+
+                        <Button Margin="10,10,10,0" BorderColor="#1d8e89" Grid.Row="6" Grid.Column="0" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo2" WidthRequest="10"/>
+                        <Image x:Name="MainImage2" Grid.Row="6" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+
+                        <Button Margin="10,10,10,0" BorderColor="#1d8e89" Grid.Row="7" Grid.Column="0" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo3" WidthRequest="10"/>
+                        <Image x:Name="MainImage3" Grid.Row="7" Grid.Column="1"/>
+                       
+                        <!-- <StackLayout Orientation="Horizontal"  >
+                           <Button Grid.Row="6"
+                            CornerRadius="20"
+                            BackgroundColor="#fff"
+                            WidthRequest="100"
+                            HorizontalOptions="StartAndExpand"
+                            BorderColor="#1d8e89"
+                            BorderWidth="1"
+                            Image="ar_left"
+                            HeightRequest="50"
+                            ContentLayout="Left, 0"
+                            Clicked="Back_Clicked"
+                        <StackLayout Orientation="Horizontal">
+                                <Button BorderColor="#1d8e89" Grid.Column="0" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo2" HorizontalOptions="StartAndExpand"/>
+                                <Image x:Name="MainImage2" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Button BorderColor="#1d8e89" Grid.Column="0" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo3" HorizontalOptions="StartAndExpand"/>
+                                <Image x:Name="MainImage3" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" IsVisible="False" x:Name="imagContent">
+                                <Button BorderColor="#1d8e89" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo2" HorizontalOptions="CenterAndExpand"/>
+                                <Button BorderColor="#1d8e89" BackgroundColor="#fff" Text="Ajouter une photo" TextColor="#1d8e89" BorderWidth="1" Clicked="Take_photo3" HorizontalOptions="EndAndExpand"/>
+                                
+                                <Image x:Name="MainImage2" HorizontalOptions="CenterAndExpand" />
+                                <Image x:Name="MainImage3" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        /> -->
+                            <Button 
+                                Text="Ajouter cet article"
+                                CornerRadius="30"
+                                BackgroundColor="#1d8e89"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="#fff"
+                                Grid.Row="8"
+                                Grid.ColumnSpan="2"
+                                Padding="15"
+                                FontSize="20"
+                                Margin="0,10,0,0"
+                            />
+
+                        <!--</StackLayout>-->
+
+
+                    </Grid>
+
+                </Frame>
+            </StackLayout>
+                
+                
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

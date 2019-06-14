@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:IntelliAbb.Xamarin.Controls;assembly=IntelliAbb.Xamarin.Controls"
+             x:Class="Wagui.Views.Inscription.IAgriculteur1" 
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="ins_agri1">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout x:Name="Main">
+                    <Button Text="Plus tard" Clicked="Cancel_click" TextColor="#fff" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="End" FontSize="20"/>
+                    <StackLayout Orientation="Horizontal" Margin="0,15,0,30">
+                        <Image Source="ar2_left.png" HorizontalOptions="Start" Margin="0,0,20,0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="Back_Clicked"
+                                    NumberOfTapsRequired="1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Label Text="Je complète mon inscription" FontAttributes="Bold" TextColor="White" FontSize="23" HorizontalOptions="CenterAndExpand"/>
+
+                    </StackLayout>
+                    <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Grid.Row="1" Margin="0,20,0,50" HorizontalTextAlignment="Start" Text="Veuillez préciser les fruits ou légumes que vous cultivez au quotidien" TextColor="White" FontSize="23"/>
+
+                        <StackLayout Grid.Row="2" HorizontalOptions="FillAndExpand">
+                            <StackLayout  Orientation="Horizontal">
+                                <Label Text="Banane" 
+                                       TextColor="#fff" 
+                                       HorizontalOptions="Start" 
+                                       FontAttributes="Bold" 
+                                       FontSize="25"
+                                       Margin="0,0,150,20"/>
+                                <controls:Checkbox
+                                    x:Name="Banane"
+                                    HorizontalOptions="Center"
+                                    OutlineColor="#01a89e"
+                                    FillColor="#01a89e"
+                                    CheckColor="White"
+                                    Shape="Rectangle"
+                                />
+                            </StackLayout>
+                            <StackLayout  Orientation="Horizontal">
+                                <Label Text="Tubercule" 
+                                       TextColor="#fff"
+                                       HorizontalOptions="Start" 
+                                       FontAttributes="Bold" 
+                                       FontSize="25"
+                                       Margin="0,0,130,20"/>
+                                <controls:Checkbox
+                                    x:Name="Tubercule"
+                                    HorizontalOptions="Center"
+                                    OutlineColor="#01a89e"
+                                    FillColor="#01a89e"
+                                    CheckColor="White"
+                                    Shape="Rectangle"
+                                />
+                            </StackLayout>
+                            <StackLayout  Orientation="Horizontal">
+                                <Label Text="Le choux" 
+                                       TextColor="#fff" 
+                                       HorizontalOptions="Start" 
+                                       FontAttributes="Bold" 
+                                       FontSize="25"
+                                       Margin="0,0,140,20"/>
+                                <controls:Checkbox
+                                    x:Name="Choux"
+                                    HorizontalOptions="Center"
+                                    OutlineColor="#01a89e"
+                                    FillColor="#01a89e"
+                                    CheckColor="White"
+                                    Shape="Rectangle"
+                                />
+                            </StackLayout>
+                            <StackLayout  Orientation="Horizontal">
+                                <Label Text="La laitue" 
+                                       TextColor="#fff" 
+                                       HorizontalOptions="Start" 
+                                       FontAttributes="Bold" 
+                                       FontSize="25"
+                                       Margin="0,0,145,20"/>
+                                <controls:Checkbox
+                                    x:Name="Laitue"
+                                    HorizontalOptions="Center"
+                                    OutlineColor="#01a89e"
+                                    FillColor="#01a89e"
+                                    CheckColor="White"
+                                    Shape="Rectangle"
+                                />
+                            </StackLayout>
+                            <StackLayout  Orientation="Horizontal">
+                                <Label Text="La tomate" 
+                                       TextColor="#fff" 
+                                       HorizontalOptions="Start" 
+                                       FontAttributes="Bold" 
+                                       FontSize="25"
+                                       Margin="0,0,130,20"/>
+                                <controls:Checkbox
+                                    x:Name="Tomate"
+                                    HorizontalOptions="Center"
+                                    OutlineColor="#01a89e"
+                                    FillColor="#01a89e"
+                                    CheckColor="White"
+                                    Shape="Rectangle"
+                                />
+                            </StackLayout>
+                            <StackLayout  Orientation="Horizontal">
+                                <Label Text="L' oseille" 
+                                       TextColor="#fff" 
+                                       HorizontalOptions="Start" 
+                                       FontAttributes="Bold" 
+                                       FontSize="25"
+                                       Margin="0,0,145,20"/>
+                                <controls:Checkbox
+                                    x:Name="Oseille"
+                                    HorizontalOptions="Center"
+                                    OutlineColor="#01a89e"
+                                    FillColor="#01a89e"
+                                    CheckColor="White"
+                                    Shape="Rectangle"
+                                />
+                            </StackLayout>
+                            
+                        </StackLayout>
+                        <AbsoluteLayout Grid.Row="3">
+                            <Button
+                                BackgroundColor="#01a89e"
+                                TextColor="#fff"
+                                Text="Suivant"
+                                FontAttributes="Bold"
+                                FontSize="30"
+                                BorderRadius="30"
+                                Clicked="NextPage"
+                                AbsoluteLayout.LayoutBounds="0.5,100,1,70" 
+                                AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" 
+                                HorizontalOptions="FillAndExpand"
+                                Image="ar2_right"
+                                ContentLayout="Right,0"
+                        />
+                        </AbsoluteLayout>
+
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

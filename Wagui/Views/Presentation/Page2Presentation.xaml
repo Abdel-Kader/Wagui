@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Presentation.Page2Presentation"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="presentation2">
+    <ContentPage.Content>
+        <ScrollView>
+                <StackLayout x:Name="Main">
+                    <Button Text="Passer" Clicked="InscriptionPage" TextColor="#fff" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="End" FontSize="20"/>
+                    <Label Margin="20,30,20,30" Text="En répondant à toutes vos questions" FontAttributes="Bold" TextColor="White" FontSize="25" HorizontalTextAlignment="Center"/>
+
+                    <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid" Margin="40,20,40,50">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Grid.Row="1" Margin="0,20,0,20" HorizontalTextAlignment="Center" Text="Wagui, c'est de nombreux agronomes spécialisés, prêts à répondre à toutes vos questions. Par exemple :" TextColor="White" FontSize="23"/>
+
+                        <Label Grid.Row="2" Margin="0,30,0,20" HorizontalTextAlignment="Center"  Text="Pourquoi mes tomates ont cette couleur ?" TextColor="White" FontSize="21"/>
+
+                        <Label Grid.Row="3" Margin="0,30,0,20" HorizontalTextAlignment="Center"  Text="Mes récoltes ne donnent plus autant qu'avant, est-ce normal ?" TextColor="White" FontSize="21"/>
+                        
+                        <Grid Grid.Row="4" HorizontalOptions="CenterAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300" />
+                        </Grid.ColumnDefinitions>
+
+                            <Button 
+                                BackgroundColor="#fff"
+                                TextColor="#00cc99"
+                                Text="Suivant"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                BorderRadius="30"
+                                Image="ar_right"
+                                Clicked="Page3Presentation"
+                                ContentLayout="Right, 20"
+                            />
+                        </Grid>
+
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

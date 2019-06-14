@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agronome.HomePage"
+             BackgroundImage="agro_home">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" Margin="20,5,0,0">
+            <Image 
+                Source="profil"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Start" WidthRequest="50"
+            />
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                <Label x:Name="nom" TextColor="#fff" FontAttributes="Bold" FontSize="17"/>
+                <Label Text="Agronome" TextColor="#000" />
+            </StackLayout>
+
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Secondary" Priority="0" Text="Profil" Clicked="Profil" >
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="profil.png"
+                                Android="profil"/>
+            </ToolbarItem.Icon>
+
+        </ToolbarItem>
+        <ToolbarItem Order="Secondary"  Text="Mes questions"></ToolbarItem>
+        <ToolbarItem Order="Secondary" Text="Me déconnecter"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+          
+            <ScrollView>
+                <StackLayout x:Name="Main">
+                    <Grid HorizontalOptions="FillAndExpand" x:Name="MainGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80*"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        
+
+                        <StackLayout Grid.Row="0" HorizontalOptions="CenterAndExpand" Margin="20,20,0,50">
+                            <Label Text="Bonjour Nom !" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Que puis-je faire pour toi ?" FontSize="30" FontAttributes="Bold" TextColor="White"/>
+                        </StackLayout>
+
+                        <Grid Grid.Row="1" BackgroundColor="#0c4900" Padding="30,80,30,100" ColumnSpacing="20" RowSpacing="25" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="150"></RowDefinition>
+                                <RowDefinition Height="150"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                                <ColumnDefinition Width="10*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button 
+                                BorderColor="Transparent" 
+                                Grid.Row="0" 
+                                Grid.Column="0" 
+                                Text="Questions"
+                                BackgroundColor="White" 
+                                BorderRadius="30"
+                                Image="agro_question"
+                                ContentLayout="Top, 2"
+                                Clicked="ListQuestion"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                TextColor="#3efc03"
+                            />
+
+                            <Button 
+                                BorderColor="Transparent" 
+                                Grid.Row="0" 
+                                Grid.Column="1" 
+                                Text="Mes astuces"
+                                BackgroundColor="White"
+                                BorderRadius="30" 
+                                Image="agro_astuce"
+                                ContentLayout="Top, 2"
+                                HorizontalOptions="FillAndExpand"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                TextColor="#3efc03"
+                            />
+
+                            <Button 
+                                BorderColor="Transparent" 
+                                Grid.Row="1" 
+                                Grid.Column="0" 
+                                Text="Mes suivis"
+                                BorderRadius="30"
+                                BackgroundColor="White" 
+                                Image="agro_suivi"
+                                ContentLayout="Top, 2"
+                                HorizontalOptions="FillAndExpand"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                TextColor="#3efc03"
+                            />
+
+                            <Button 
+                                BorderColor="Transparent" 
+                                Grid.Row="1" 
+                                Grid.Column="1" 
+                                Text="Mon compte"
+                                BorderRadius="30"
+                                BackgroundColor="White" 
+                                Image="agro_compte"
+                                ContentLayout="Top, 2"
+                                HorizontalOptions="FillAndExpand"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                TextColor="#3efc03"
+                            />
+                        </Grid>
+                       
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

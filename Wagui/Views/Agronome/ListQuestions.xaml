@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agronome.ListQuestions"
+             BackgroundImage="agro_home"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="40,15,40,0">
+            <Image Source="user" WidthRequest="60" HorizontalOptions="Start">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <StackLayout HorizontalOptions="StartAndExpand">
+                <Label 
+                        Text="Nom Prenom"
+                        Margin="0,0,0,0"
+                        TextColor="#fff" 
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        
+                    />
+                <Label 
+                        Text="agronome"
+                        FontSize="17"
+                        Margin="0,0,0,0"
+                        TextColor="#b8bbc0" 
+                        FontAttributes="Bold"
+                    />
+            </StackLayout>
+
+
+
+        </StackLayout>
+
+        <StackLayout  BackgroundColor="#0c4900">
+            <ListView x:Name="MyListView" Margin="20"
+                  HasUnevenRows="True" IsPullToRefreshEnabled="true"
+                  RefreshControlColor="Red"
+                  SeparatorVisibility="None" 
+                  HorizontalOptions="FillAndExpand" 
+                  VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#e6e6e6" Margin="0,0,0,15" >
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#fff" >
+                                    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Margin="20,10,0,10">
+                                        <Image Source="user" WidthRequest="40"/>
+                                        <Label Text="{Binding Nom}" TextColor="#3efc03" FontSize="20" Margin="0,10,0,0"/>
+                                        <Label Text="{Binding Prenom}" TextColor="#3efc03" FontSize="20" Margin="0,10,0,0"/>
+                                    </StackLayout>
+                                    
+                                    <Label Text="{Binding Date_debut}" HorizontalOptions="EndAndExpand" Margin="20,25,20,10"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="0,0,0,15" Margin="30,10,30,0">
+                                    <Label Text="{Binding Question}" TextColor="Black"/>
+                                </StackLayout>
+
+                                <Button 
+                                    Text="Répondre" 
+                                    BorderWidth="1" 
+                                    BorderColor="#1dbb6b" 
+                                    TextColor="#1dbb6b" 
+                                    BackgroundColor="#fff" 
+                                    WidthRequest="200" 
+                                    HeightRequest="40"
+                                    FontSize="17"
+                                    Clicked="repondre"
+                                    HorizontalOptions="Start" 
+                                    BorderRadius="20"
+                                    Margin="30,10,30,10"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>

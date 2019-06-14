@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agriculteur.AgriculteurHome">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" Margin="20,5,0,0">
+            <Image 
+                Source="profil"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Start" WidthRequest="50"
+            />
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                <Label x:Name="nom" TextColor="#fff" FontAttributes="Bold" FontSize="17"/>
+                <Label Text="Agriculteur" TextColor="#000" />
+            </StackLayout>
+
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Secondary" Priority="0" Text="Profil" Clicked="Profil" >
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="profil.png"
+                                Android="profil"/>
+            </ToolbarItem.Icon>
+            
+        </ToolbarItem>
+        <ToolbarItem Order="Secondary" Text="Mes questions" Clicked="Questions"></ToolbarItem>
+        <ToolbarItem Order="Secondary" Text="Me déconnecter" Clicked="Deconnexion"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+       
+        <StackLayout>
+            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+            <ScrollView>
+                <StackLayout x:Name="Main">
+                    
+                    <Label Margin="30,20,0,10" Text="Que puis-je faire pour vous ?" TextColor="#00a99e" FontSize="25" FontAttributes="Bold"/>
+                    <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid" VerticalOptions="CenterAndExpand" Margin="20,20,20,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="120"></RowDefinition>
+                            <RowDefinition Height="120"></RowDefinition>
+                            <RowDefinition Height="80"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"  Source="agri_question" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="new_question"
+                            NumberOfTapsRequired="1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label FontSize="25" Grid.Row="0" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.ColumnSpan="2" Text="J'ai une question ?" TextColor="White" FontAttributes="Bold"/>
+                        <Button BorderColor="Transparent" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" Clicked="new_question" Grid.ColumnSpan="2"/>
+
+                        <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"  Source="agri_aide" Grid.Row="1" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                            NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                        </Image>
+                        <Label FontSize="25" Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.Column="0" Text="J'ai besoin d'aide" TextColor="White" FontAttributes="Bold"/>
+                        <Button BorderColor="Transparent" Clicked="aidePage" Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent"/>
+                        
+                        
+                        <Button 
+                            FontSize="25"
+                            Text="Mes offres"
+                            BackgroundColor="#00a99e"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            Grid.Row="1" Grid.Column="1"
+                            Clicked="Mes_offres"
+                        />
+
+                        
+                        <Button 
+                            FontSize="25"
+                            Text="Mon portefeuille"
+                            BackgroundColor="#0c8058"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            Grid.Row="2" Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                        />
+
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

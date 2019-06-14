@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agriculteur.AchatPage.AchatHomePage"
+             Title="Acheter">
+    <ScrollView>
+        <StackLayout Margin="15,15,15,0">
+            <Frame  BackgroundColor="#004e45" HasShadow="True" CornerRadius="10">
+                <Grid x:Name="MainGrid2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Aubergines" TextColor="#fff" FontSize="30" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="10,10,0,0"/>
+                    <Label Text="Oyen/Weoleu-Ntem" TextColor="#a0cecc" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0,15,10,0"/>
+
+                    <StackLayout BackgroundColor="#1d8e89" Grid.Row="1" Grid.Column="0" Margin="10,10,0,0">
+                        <Label Text="Prix :" TextColor="#a0cecc"  Grid.Row="1"/>
+                        <Label Text="350Fcfa / KG" TextColor="#fff" FontSize="17"/>
+
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="1" BackgroundColor="#1d8e89" Margin="0,10,10,0">
+                        <Label Text="175 000 Fcfa"  TextColor="#fff" FontSize="21" FontAttributes="Bold" Margin="10,10,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#1d8e89" Grid.Row="2" Grid.Column="0" Margin="10,10,0,0">
+                        <Label Text="Vendeur :" TextColor="#a0cecc" />
+                        <Label Text="Clotaire NDONG BIBANG" TextColor="#fff" FontSize="17"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#a0cecc" Grid.Row="2" Grid.Column="1" Margin="0,10,10,0">
+                        <Label Text="Quantité :" TextColor="#004f47" />
+                        <Label Text="500 KG" TextColor="#1d8e89" FontSize="21" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+
+            <Frame BackgroundColor="#004e45" HasShadow="True" CornerRadius="10" Margin="0,25,0,20">
+                <Grid x:Name="MainGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button BackgroundColor="Transparent" Grid.Row="0" Grid.RowSpan="6" Grid.ColumnSpan="2" Clicked="Button_Clicked"/>
+                    <Label Text="Poivrons" TextColor="#fff" FontSize="30" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="10,10,0,0"/>
+                    <Label Text="Oyen/Weoleu-Ntem" TextColor="#a0cecc" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0,15,10,0"/>
+
+                    <StackLayout BackgroundColor="#1d8e89" Grid.Row="1" Grid.Column="0" Margin="10,10,0,0">
+                        <Label Text="Prix :" TextColor="#a0cecc"  Grid.Row="1"/>
+                        <Label Text="1000Fcfa / KG" TextColor="#fff" FontSize="17"/>
+
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="1" BackgroundColor="#1d8e89" Margin="0,10,10,0">
+                        <Label Text="300 000 Fcfa"  TextColor="#fff" FontSize="21" FontAttributes="Bold" Margin="10,10,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="#1d8e89" Grid.Row="2" Grid.Column="0" Margin="10,10,0,0">
+                        <Label Text="Vendeur :" TextColor="#a0cecc" />
+                        <Label Text="Clotaire NDONG BIBANG" TextColor="#fff" FontSize="17"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#a0cecc" Grid.Row="2" Grid.Column="1" Margin="0,10,10,0">
+                        <Label Text="Quantité :" TextColor="#004f47" />
+                        <Label Text="300 KG" TextColor="#1d8e89" FontSize="21" FontAttributes="Bold"/>
+                    </StackLayout>
+
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

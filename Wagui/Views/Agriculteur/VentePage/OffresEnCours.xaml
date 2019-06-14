@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agriculteur.VentePage.OffresEnCours"
+             Title="Productions en vente">
+    <ScrollView>
+        <StackLayout BackgroundColor="#ddd">
+            <Button Text="+ Ajouter un nouvel article" x:Name="Btntxt" BackgroundColor="#1d8e89" Margin="20,40,20,0" HorizontalOptions="StartAndExpand" HeightRequest="40" TextColor="#fff" Clicked="Btntxt_Clicked"/>
+
+            <Frame Margin="20" CornerRadius="20" HasShadow="True">
+                <Grid x:Name="MainGrid2" BackgroundColor="#fff">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Poivrons" TextColor="#004f47" FontSize="25" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="20,10,0,10"/>
+                    <Label Text="Oyen/Weoleu-Ntem" TextColor="#a0cecc" FontSize="15" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0,15,0,0"/>
+                    <StackLayout BackgroundColor="#e8f4f2" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,20,10">
+                        <Label Text="Prix :" Grid.Column="0"/>
+                        <Label Text="300 000 Fcfa" Grid.Column="1" TextColor="#004f47" FontSize="25" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#f6f6f6" Grid.Row="2" Grid.Column="0" Margin="20,0,0,10">
+                        <Label Text="Prix par Kilogramme (KG)" TextColor="#a0cecc"/>
+                        <Label Text="1 000Fcfa" TextColor="#1d8e89" FontSize="20"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#f6f6f6" Grid.Row="2" Grid.Column="1" Margin="0,0,20,10" Padding="10">
+                        <Label Text="Quantité :" TextColor="#a0cecc" />
+                        <Label Text="300 KG" TextColor="#1d8e89" FontSize="18"/>
+                    </StackLayout>
+
+                    <Image Source="poivron" WidthRequest="50" Grid.Row="3" Grid.Column="0" Margin="20,0,0,10"/>
+                    <StackLayout BackgroundColor="#f6f6f6" Grid.Row="3" Grid.Column="1" Margin="0,0,20,0" Padding="10">
+                        <Label Text="Je dispose de poivrons cultivés dans une grande plantation situé à Oyem" TextColor="#3e9591"/>
+                    </StackLayout>
+
+
+                    <StackLayout BackgroundColor="#f6f6f6" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,10,20,10">
+                        <Label Text="Acheteur :" Grid.Column="0" TextColor="#a0cecc"/>
+                        <StackLayout Grid.Column="1">
+                            <Label Text="Mohammed ABOUBACAR" FontSize="18" TextColor="#1d8e89" FontAttributes="Bold"/>
+                            <Label Text="Payé le 15 Mai 2019" TextColor="#a0cecc"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+
+
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

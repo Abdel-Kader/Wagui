@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agriculteur.AchatPage.AchatArticlePage">
+    <ScrollView>
+        <StackLayout BackgroundColor="#fdfdfd">
+            <Grid x:Name="MainGrid2" Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout BackgroundColor="#1d8e89" Grid.Row="0" Grid.ColumnSpan="2" Padding="15">
+                    <Label Text="Récapitulatif" TextColor="#d1e7e6" FontSize="18"/>
+                    
+                </StackLayout>
+                <StackLayout BackgroundColor="#fff" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="20">
+                    <Label Text="TOTAL :" TextColor="#a0cecc"/>
+                    <Label Text="475 000 Fcfa" TextColor="#004f47" FontSize="25" FontAttributes="Bold"/>
+
+                    <StackLayout>
+                        <Label Text="Aubergines" Grid.Column="0" />
+                        <Label Text="500Kg/semaine"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

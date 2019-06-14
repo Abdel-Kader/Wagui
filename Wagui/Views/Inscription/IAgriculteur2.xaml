@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Wagui.Services"
+             x:Class="Wagui.Views.Inscription.IAgriculteur2"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="ins_agri1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+            <ScrollView>
+                <StackLayout x:Name="Main" IsEnabled="{Binding IsEnable}">
+                    <Button Text="Plus tard" Clicked="Cancel_click" TextColor="#fff" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="End" FontSize="20"/>
+                    <StackLayout Orientation="Horizontal" Margin="0,15,0,30">
+                        <Image Source="ar2_left.png" HorizontalOptions="Start" Margin="0,0,20,0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="Back_Clicked"
+                                    NumberOfTapsRequired="1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Label Text="Je complète mon inscription" FontAttributes="Bold" TextColor="White" FontSize="23" HorizontalOptions="CenterAndExpand"/>
+
+                    </StackLayout>
+                    <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid" Margin="40,0,40,50" IsEnabled="{Binding IsEnable}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Grid.Row="1" Margin="0,20,0,50" HorizontalTextAlignment="Start" Text="Donnez nous les dimensions de votre plantation et dites nous où elle est située :" TextColor="White" FontSize="23"/>
+
+                        <StackLayout Grid.Row="2">
+
+                            <local:BorderEntry x:Name="LibelleEntry" Text="{Binding Libelle}" Margin="0,5,0,20"  FontSize="20" Placeholder="Bamboch"></local:BorderEntry>
+                            
+                            <StackLayout Orientation="Horizontal">
+                                <local:BorderEntry x:Name="DimensionEntry" Keyboard="Numeric" Placeholder="1" Text="{Binding Dimensions}" HorizontalOptions="FillAndExpand" Margin="0,5,0,20" WidthRequest="200" BackgroundColor="Accent"></local:BorderEntry>
+                                <local:BorderEntry x:Name="Entry" Placeholder="hectars" PlaceholderColor="#01a89e" IsReadOnly="True" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0,5,0,20" FontSize="25"></local:BorderEntry>
+                            </StackLayout>
+
+                            <local:BorderEntry x:Name="CommentaireEntry" FontAttributes="Bold" Placeholder="En plein air" Text="{Binding Commentaire}" Margin="0,5,0,20" ></local:BorderEntry>
+                            <StackLayout Orientation="Horizontal">
+                                <local:BorderEntry x:Name="DateEntry" Keyboard="Numeric" Placeholder="Depuis" Text="{Binding Date_creation}" HorizontalOptions="FillAndExpand" Margin="0,5,0,20" WidthRequest="250"></local:BorderEntry>
+                                <local:BorderEntry x:Name="EntryA" PlaceholderColor="#01a89e" Placeholder="ans" IsReadOnly="True" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0,5,0,20" FontSize="25"></local:BorderEntry>
+                            </StackLayout>
+                        </StackLayout>
+                        <AbsoluteLayout Grid.Row="3">
+                            <Button
+                                BackgroundColor="#01a89e"
+                                TextColor="#fff"
+                                Text="Suivant"
+                                FontAttributes="Bold"
+                                FontSize="30"
+                                BorderRadius="30"
+                                Command="{Binding SubmitCommand}"
+                                AbsoluteLayout.LayoutBounds="0.5,5,1,70" 
+                                AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" 
+                                HorizontalOptions="FillAndExpand"
+                                Image="ar2_right"
+                                ContentLayout="Right,0"
+                        />
+                        </AbsoluteLayout>
+                        <StackLayout
+                            Padding="30"
+                            BackgroundColor="White"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            IsVisible="{Binding IsBusy}"
+                            Grid.Row="2">
+                            <ActivityIndicator IsRunning="true" Color="#00a99e" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                            <Label
+                                FontAttributes="Bold"
+                                Text="Chargement en cours..."
+                                TextColor="#00a99e" 
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"
+                                HorizontalTextAlignment="Center"
+                            />
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

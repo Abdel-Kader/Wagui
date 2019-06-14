@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Presentation.Page4Presentation"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="presentation4">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="Main">
+                <Button Text="Passer" Clicked="InscriptionPage" TextColor="#fff" FontSize="20" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="End"/>
+                <Label Margin="20,50,20,70" Text="En vous permettant d'investir dans un projet sûr" FontAttributes="Bold" TextColor="White" FontSize="25" HorizontalTextAlignment="Center"/>
+
+                <Grid HorizontalOptions="CenterAndExpand" x:Name="MainGrid" Margin="40,20,40,50">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Grid Grid.Row="1" HorizontalOptions="CenterAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button 
+                                BackgroundColor="#fff"
+                                TextColor="#00cc99"
+                                Text="Suivant"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                BorderRadius="30"
+                                Image="ar_right"
+                                Clicked="Page5Presentation"
+                                ContentLayout="Right, 20"
+                            />
+                    </Grid>
+
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

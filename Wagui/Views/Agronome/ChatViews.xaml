@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wagui.Views.Agronome.ChatViews"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="#0c4900">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl_NoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10">
+                <Image Source="ar_left" WidthRequest="60" Margin="20" HorizontalOptions="StartAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                        NumberOfTapsRequired="1"
+                    />
+                    </Image.GestureRecognizers>
+                </Image>
+                
+                <StackLayout HorizontalOptions="EndAndExpand" Orientation="Horizontal">
+                    <Image Source="user" WidthRequest="60" HorizontalOptions="EndAndExpand">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                        NumberOfTapsRequired="1"
+                    />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <StackLayout Margin="0,15,0,0">
+                        <Label 
+                            Text="Nom Prenom"
+                            TextColor="#3efc03" 
+                            FontAttributes="Bold"
+                            FontSize="25"
+                        />
+                        <Label 
+                            Text="agriculteur"
+                            FontSize="19"
+                            TextColor="#fff" 
+                        />
+                    </StackLayout>
+                    
+                </StackLayout>
+
+
+            </StackLayout>
+
+            <StackLayout  BackgroundColor="#90d688">
+                <ListView x:Name="MyListView" Margin="20"
+                  HasUnevenRows="True" IsPullToRefreshEnabled="true"
+                  RefreshControlColor="Red"
+                  SeparatorVisibility="None" 
+                  HorizontalOptions="FillAndExpand" 
+                  VerticalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
